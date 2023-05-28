@@ -51,6 +51,9 @@ public class OrganizationControllerTests {
     @Test
     public void testInvalidAdd() {
         Organization organization = new Organization();
+        // TODO
+        organization.setAddress("via Roma 12");
+        organization.setName("MyOrg");
         given().contentType("application/json").body(organization).when().post("/organizations").then().statusCode(400);
     }
 

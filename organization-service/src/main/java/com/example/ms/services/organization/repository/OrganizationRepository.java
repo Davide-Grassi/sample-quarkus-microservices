@@ -17,7 +17,8 @@ public class OrganizationRepository {
 	}
 
 	public Organization add(Organization organization) {
-		organization.setId((long) (organizations.size()+1));
+		// TODO
+		organization.setId(11L);
 		organizations.add(organization);
 		return organization;
 	}
@@ -30,7 +31,8 @@ public class OrganizationRepository {
 	}
 
 	public Set<Organization> findAll() {
-		return organizations;
+		// TODO
+		return Collections.emptySet();
 	}
 	
 }

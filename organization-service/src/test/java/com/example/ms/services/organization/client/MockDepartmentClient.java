@@ -1,7 +1,6 @@
 package com.example.ms.services.organization.client;
 
 import io.quarkus.test.Mock;
-import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import com.example.ms.services.organization.model.Department;
 

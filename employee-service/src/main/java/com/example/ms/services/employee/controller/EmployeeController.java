@@ -24,7 +24,8 @@ public class EmployeeController {
     @POST
     public Employee add(@Valid Employee employee) {
         LOGGER.info("Employee add: {}", employee);
-        return repository.add(employee);
+        // TODO
+        return repository.add(null);
     }
 
     @Path("/{id}")
@@ -51,7 +52,8 @@ public class EmployeeController {
     @GET
     public Set<Employee> findByOrganization(@PathParam("organizationId") Long organizationId) {
         LOGGER.info("Employee find: organizationId={}", organizationId);
-        return repository.findByOrganization(organizationId);
+        // TODO
+        return null;
     }
 
 }

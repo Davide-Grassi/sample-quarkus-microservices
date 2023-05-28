@@ -13,10 +13,8 @@ public class DepartmentRepository {
 
     private final Set<Department> departments = new HashSet<>();
 
+    // TODO
     public DepartmentRepository() {
-        add(new Department(1L, "Test1"));
-        add(new Department(1L, "Test2"));
-        add(new Department(2L, "Test3"));
     }
 
     public Department add(Department department) {

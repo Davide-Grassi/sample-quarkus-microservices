@@ -20,7 +20,8 @@ public class EmployeeControllerTests {
 
     @Test
     public void testFindAll() {
-        given().when().get("/employees").then().statusCode(200).body(notNullValue());
+        // TODO
+        given().when().get("/impiegati").then().statusCode(200).body(notNullValue());
     }
 
     @Test
@@ -29,7 +30,8 @@ public class EmployeeControllerTests {
         employee = repository.add(employee);
         given().when().get("/employees/{id}", employee.getId()).then().statusCode(200)
                 .body("id", equalTo(employee.getId().intValue()))
-                .body("name", equalTo(employee.getName()))
+                // TODO
+                .body("name", equalTo("Joe"))
                 .body("position", equalTo(employee.getPosition()));
     }
 
